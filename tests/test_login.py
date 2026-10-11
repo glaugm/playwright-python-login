@@ -14,7 +14,7 @@ def test_login_senha_incorreta(page:Page):
 def test_login_sucesso(page:Page):
     page.goto("https://gotasdetecnologia.com.br/testes-curso01/login-js/index.html")
 
-    page.get_by_role("textbox", name="Email").fill("qa.playwright.teste@gmail.com ")
+    page.get_by_role("textbox", name="Email").fill("qa.playwright.teste@gmail.com")
     page.get_by_role("textbox", name="Senha").fill("Play@1234")
 
     page.get_by_role("button", name="Entrar").click()
